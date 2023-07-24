@@ -1,0 +1,306 @@
+body {
+    width: 1440px;
+    height: 90px;
+}
+
+/* head */
+header {
+    width: 1440px;
+    height: 90px;
+}
+
+button {
+    background: none;
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+.navi {
+    display: flex;
+    background-color: white;
+    padding: 20px 102px;
+    width: 1256px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation2 a {
+    color: #231F20;;
+    padding: 10px;
+    font-size: 24px;
+    font-family: "DK Nouveau Crayon Regular";
+}
+
+.navigation1 {
+    float: left;
+    width: 76.67px;
+    height: 50px;
+    justify-content: left;
+    align-items: center;
+}
+
+.navigation2 {
+    float: right;
+    justify-content: right;
+    align-items: center;
+}
+
+/* section */
+h1 {
+    font-family: "Crayon Works DEMO Regular";
+    font-size: 96px;
+    color: #231F20;
+}
+
+h2 {
+    font-family: "DK Nouveau Crayon Regular";
+    font-size: 64px;
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #231F20;
+}
+
+h3 {
+    margin-left: 80px;
+    font-family: "DK Nouveau Crayon Regular";
+    font-size: 36px;
+    color: #A1A1A1;
+}
+
+#LineCat {
+    margin-bottom: -34px;
+}
+
+.title {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 19px;
+}
+
+.mainpage {
+    margin: 90px 121px;
+}
+
+.item {
+    display: flex;
+    align-items: baseline;
+    height: 79px;
+}
+
+/* footer */
+
+footer {
+    width: 1256px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 102px;
+    align-items: center;
+}
+
+.footer1 {
+    width: 482px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.footer1 a {
+    font-size: 24px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-family: "DK Nouveau Crayon Regular";
+}
+
+#cancel {
+    width: 42px;
+    height: 42px;
+}
+
+.icon {
+    width: 520px;
+    height: 40px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.icon a {
+    width: 40px;
+    height: 40px;
+}
+
+.a1 {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+}
+
+#a2 {
+    height: 40px;
+    width: 40px;
+    margin-left: 0px;
+    margin-right: 20px;
+}
+
+#a3 {
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+/* Section2 */
+
+h4 {
+    font-size: 64px;
+    font-family: "Crayon Works DEMO Regular";
+    color: #231F20;
+    margin: 0;
+}
+
+h5 {
+    font-family: "DK Nouveau Crayon Regular";
+    font-size: 24px;
+    color: #A1A1A1;
+    margin: 0;
+}
+
+p {
+    font-family: "DK Nouveau Crayon Regular";
+    font-size: 24px;
+    color: #231F20;
+    margin: 0;
+}
+
+.mywork {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+    'work1'
+    'work2'
+    'work3';
+    margin: 60px 102px;
+}
+
+.work1 {
+    grid-area: work1;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    'SADHS sadhspic';
+    margin: 10px 0;
+}
+
+.work2 {
+    grid-area: work2;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-areas:
+    'ftcpic FTC';
+    margin: 10px 0;
+}
+
+.work3 {
+    grid-area: work3;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-areas:
+    'SeatMe seatmepic';
+    margin: 10px 0;
+}
+
+.SADHS {
+    grid-area: SADHS;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.FTC {
+    grid-area: FTC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 10px;
+}
+
+.SeatMe {
+    grid-area: SeatMe;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#sadhspic {
+    grid-area: sadhspic;
+    margin-left: 10px;
+}
+
+#ftcpic {
+    grid-area: ftcpic;
+}
+
+#seatmepic {
+    grid-area: seatmepic;
+    margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+    .mywork {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        'SADHS'
+        'sadhspic'
+        'FTC'
+        'ftcpic'
+        'SeatMe'
+        'seatmepic';
+        margin: 60px 102px;
+    }
+    
+    .SADHS {
+        grid-area: SADHS;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .FTC {
+        grid-area: FTC;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .SeatMe {
+        grid-area: SeatMe;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #sadhspic {
+        grid-area: sadhspic;
+    }
+    
+    #ftcpic {
+        grid-area: ftcpic;
+    }
+    
+    #seatmepic {
+        grid-area: seatmepic;
+    }
+  }
